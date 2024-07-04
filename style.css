@@ -456,6 +456,11 @@ main {
     width: 98%;
   }
 
+  .principalGames{
+    padding-right: 2.8rem;
+    padding-left: 2.8rem;
+  }
+
   .optionsSection a ul {
     display: flex;
     width: 98%;
@@ -488,11 +493,17 @@ main {
     align-content: space-between;
     padding-left: 0.4rem;
     padding-right: 4rem;
-    width: 93vw;
+    width: 95.2vw;
   }
   .games{
-    width: 100vw;
+    width: 100%;
   }
+  .principalGames{
+    max-width: 96%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
   .games img{
     max-width: 16rem;
   }
