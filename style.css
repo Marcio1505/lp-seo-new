@@ -110,7 +110,7 @@ section {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    display: none ;
 }
 
 ol,
@@ -134,10 +134,13 @@ q:after {
 body {
     display: flex;
     flex-direction: column;
-    background: url(/assets/imgs/home_bg.565658e.png) repeat top / 100% auto;
+    background: url(./assets/imgs/home_bg.565658e.png) repeat top / 100% auto;
     background-color: #1f1736;
+    overflow-x: hidden;
 }
-
+html{
+    overflow-x: hidden;
+}
 header {
     display: flex;
     align-items: center;
@@ -184,11 +187,9 @@ main {
 
 .slider {
     display: flex;
-    align-self: center;
     top: 2rem;
     background: #24242400;
-    padding-bottom: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     max-width: 100%;
 }
 
@@ -212,6 +213,10 @@ main {
     left: 0;
     right: 0;
     z-index: 5;
+}
+
+.arrow-left{
+    display: none;
 }
 
 .slider .paginacao .botao {
@@ -298,7 +303,12 @@ main {
     justify-content: space-between;
     color: white;
     margin-bottom: 1.8rem;
-    margin-top: 1.2rem;
+    
+}
+
+.optionsSection li{
+    text-align: center;
+    font-size: 0.9em;
 }
 
 .optionsSection a {
@@ -331,10 +341,6 @@ main {
     display: flex;
 }
 
-.video {
-    max-width: 13rem;
-    border-radius: 15px;
-}
 
 .games {
     display: flex;
@@ -393,6 +399,10 @@ main {
     flex-direction: column
 }
 
+.jackpot-nums img{
+    border-radius: 5px;
+}
+
 @media (max-width:1150px) {
     .optionsSection a {
         width: 45%;
@@ -418,7 +428,7 @@ main {
         align-items: center;
     }
     .games div{
-        max-width: 80%;
+        max-width: 100%;
         padding-top: 2rem;
     }
 
@@ -433,8 +443,67 @@ main {
         width: 2rem;
         font-size: 0.8rem
     }
+
 }
 
-@media (max-width:500px){
+@media (max-width:550px){
+    nav{
+        width: 100%;
+    }
+    .navigation{
+        justify-content: space-around;
+    }
+    .navigation li{
+        width: 1rem;
+    }
+    main{
+        width: 97vw;
+        justify-content: space-around;
+    }
+    .optionsSection{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .optionsSection a{
+        width: 98%;
+    }
+
+    .optionsSection a ul{
+        display: flex;
+        width: 98%;
+        justify-content: space-around;
+    }
+
+    .games{
+        align-content: space-around;
+    }
+
+    .games div{
+        max-width: 80%;
+        padding-top: 2rem;
+    }
+    .games ul{
+        width: 96%;
+    }
+    .optionsSection{
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
+    }
+    
+    body {
+        background:none ;
+        background-color: #1f1736;
+    }
+
+}
+
+@media (max-width:400px){
+    .optionsSection{
+        padding: 0;
+        justify-content: center;
+        align-content: space-between
+
+    }
 
 }
