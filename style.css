@@ -1,0 +1,440 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+a,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(/assets/imgs/home_bg.565658e.png) repeat top / 100% auto;
+    background-color: #1f1736;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    width: auto;
+    background-image: linear-gradient(180deg, #4f3661, #1f1736);
+    border-bottom: 1px solid rgb(109, 109, 0);
+}
+
+main {
+    background-color: #1D1635;
+    display: flex;
+    /* position: relative; */
+    flex-flow: column wrap;
+    align-self: center;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 1rem;
+    width: 80%;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 3rem;
+    align-items: center;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+}
+
+.navigation li img {
+    max-width: 2.5rem;
+}
+
+.navigation li a {
+    color: white;
+}
+
+
+.slider {
+    display: flex;
+    align-self: center;
+    top: 2rem;
+    background: #24242400;
+    padding-bottom: 2rem;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: fade 1s;
+    border-radius: 15px;
+}
+
+.slider .paginacao {
+    margin: auto;
+    top: auto;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.slider .paginacao .botao {
+    width: auto;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* slide homeGames */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-3rem * 5));
+    }
+}
+
+.homeGamesBox {
+    background: rgba(81, 57, 115, .5);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 2rem 0%;
+    border-radius: 15px;
+    display: flex;
+}
+
+
+.homeGamesBox::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.homeGamesBox::before {
+    left: 0;
+    top: 0;
+}
+
+.homeGames-track {
+    animation: scroll 15s linear infinite;
+    display: flex;
+    width: auto;
+}
+
+.homeGames-track img {
+    max-height: 3rem;
+    height: 2rem;
+    max-width: 6rem;
+}
+
+.homeGames {
+    max-height: 3rem;
+    max-width: 6rem;
+    padding: 1rem;
+}
+
+.homeGames p {
+    width: 200rem;
+    color: white;
+}
+
+/* slide homeGames */
+
+.optionsSection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.optionsSection a {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(81, 57, 115, .5);
+    border-radius: 10px;
+    margin: 0.5rem 0.1rem;
+    padding: 0.3rem;
+}
+
+.optionsSection a div {
+    text-align: center;
+    background-color: #261d41;
+    width: 100%;
+    height: 20%;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.optScImg {
+    margin: 0.8em;
+    max-width: 2em;
+}
+
+.icons {
+    display: flex;
+}
+
+.video {
+    max-width: 13rem;
+    border-radius: 15px;
+}
+
+.games {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.games img {
+    max-width: 29rem;
+    max-height: 19rem;
+}
+
+.games div {
+    max-width: 25rem;
+}
+
+.games ul {
+    background-color: rgba(81, 59, 114, .45);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.games ul li {
+    max-width: 5rem;
+    max-height: 5rem;
+    padding: 0.5rem;
+}
+
+.games ul li a p {
+    position: relative;
+    z-index: 1;
+    top: -1.2rem;
+    font-size: 0.7em;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #1f173691;
+    border-radius: 0 0 5px 5px;
+}
+
+.games ul li a img {
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 8px;
+}
+
+
+.jackpot-nums {
+    max-width: 328px;
+    display: flex;
+    flex-direction: column
+}
+
+@media (max-width:1150px) {
+    .optionsSection a {
+        width: 45%;
+    }
+}
+
+@media (max-width:900px) {
+    header{
+        height:5rem ;
+    }
+    header img{
+        max-width: 6rem;
+    }
+    .mobile-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation li{
+        padding-top: 0;
+    }
+    .games{
+        flex-direction: column;
+        align-items: center;
+    }
+    .games div{
+        max-width: 80%;
+        padding-top: 2rem;
+    }
+
+}
+@media (max-width:600px){
+    .navigation{
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+    .navigation li{
+        width: 2rem;
+        font-size: 0.8rem
+    }
+}
+
+@media (max-width:500px){
+
+}
