@@ -372,7 +372,7 @@ main {
 .games ul li a p {
   position: relative;
   z-index: 1;
-  top: -1.2rem;
+  top: -1.7rem;
   font-size: 0.7em;
   padding-bottom: 0.2rem;
   text-align: center;
@@ -408,11 +408,7 @@ main {
     height: 5rem;
   }
   header img {
-    max-width: 6rem;
-  }
-  .mobile-container {
-    display: flex;
-    flex-direction: column;
+    max-width: 8rem;
   }
   .navigation li {
     padding-top: 0;
@@ -520,7 +516,7 @@ main {
   .hamburger-menu {
     display: block; /* Exibe o menu hamburguer em telas menores */
   }
-
+  
   .navigation li {
     display: flex;
     flex-direction: row;
