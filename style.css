@@ -372,8 +372,8 @@ main {
 .games ul li a p {
   position: relative;
   z-index: 1;
-  top: -1.7rem;
-  font-size: 0.7em;
+  top: -1.2rem;
+  font-size: 0.6em;
   padding-bottom: 0.2rem;
   text-align: center;
   color: rgb(255, 255, 255);
