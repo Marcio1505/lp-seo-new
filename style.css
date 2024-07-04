@@ -374,7 +374,7 @@ main {
   z-index: 1;
   top: -1.2rem;
   font-size: 0.6em;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: #1f173691;
@@ -444,7 +444,7 @@ main {
     width: 1rem;
   }
   main {
-    width: 97vw;
+    width: 100vw;
     justify-content: space-around;
   }
   .optionsSection {
@@ -470,9 +470,6 @@ main {
     max-width: 80%;
     padding-top: 2rem;
   }
-  .games ul {
-    width: 96%;
-  }
   .optionsSection {
     padding-right: 2.2rem;
     padding-left: 2.2rem;
@@ -489,6 +486,18 @@ main {
     padding: 0;
     justify-content: center;
     align-content: space-between;
+    padding-left: 0.4rem;
+    padding-right: 4rem;
+    width: 93vw;
+  }
+  .games{
+    width: 100vw;
+  }
+  .games img{
+    max-width: 16rem;
+  }
+  .games div{
+    max-width: 96%;
   }
 }
 /*MENU*/
@@ -515,6 +524,7 @@ main {
 
   .hamburger-menu {
     display: block; /* Exibe o menu hamburguer em telas menores */
+    margin-right: 0.8rem;
   }
   
   .navigation li {
