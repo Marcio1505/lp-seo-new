@@ -160,9 +160,17 @@ main {
   max-width: 1000px;
   min-width: 300px;
   padding: 1rem;
+  align-items: center;
   width: 80%;
 }
-
+h1{
+    font-size: 2em;
+}
+.time{
+    padding: 1em 0em 2em 0;
+    color: rgb(212, 212, 212);
+    font-size: 0.8em;
+}
 .navigation {
   display: flex;
 }
@@ -206,15 +214,10 @@ main {
 }
 
 .slider .paginacao {
-  margin: auto;
-  top: auto;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  z-index: 5;
+display: none;
 }
 
-.arrow-left {
+.arrow-left, .arrow-right{
   display: none;
 }
 
@@ -397,6 +400,46 @@ main {
   border-radius: 5px;
 }
 
+.article{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(81, 59, 114, 0.45);
+    border-radius: 15px;
+    text-align: center;
+}
+
+article{
+    margin: 3rem 2rem;
+    color: #fff;
+}
+
+
+.ads {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ad-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.7em;
+    color: rgb(204, 204, 204);
+    margin-top: 0rem;
+    padding: 0rem 0.8rem 0.8rem 0.8rem;
+}
+
+.ad-text {
+    display: flex;
+    background-color: rgb(247, 247, 247);
+}
+
+.ad-box img {
+    width: 100%;
+}
+
 @media (max-width: 1150px) {
   .optionsSection a {
     width: 45%;
@@ -416,6 +459,9 @@ main {
   .games {
     flex-direction: column;
     align-items: center;
+  }
+  .games ul {
+    justify-content: space-around
   }
   .games div {
     max-width: 100%;
@@ -484,6 +530,12 @@ main {
     background: none;
     background-color: #1f1736;
   }
+  .article{
+    max-width: 91vw;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -496,19 +548,31 @@ main {
     width: 95.2vw;
   }
   .games{
-    width: 100%;
+    padding: 0;
+    justify-content: center;
+margin-left: 0.6rem;
+    width: 95.2vw;
   }
   .principalGames{
-    max-width: 96%;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .article{
+    max-width: 91vw;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .games img{
-    max-width: 16rem;
+    max-width: 17rem;
   }
   .games div{
-    max-width: 96%;
+    max-width: 97%;
+  }
+  main{
+    align-items: normal;
   }
 }
 /*MENU*/
@@ -544,3 +608,11 @@ main {
     align-items: center;
   }
 }
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+    color: white;
+    background-color:rgba(81, 59, 114, 0.836);
+}
+
